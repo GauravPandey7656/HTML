@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Introduction to JavaScript</h1>
+
+
+    
+    <div id="mainDivID" class="mainDivClass">
+        <h1 id="heading">Events and Handelrs</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illum voluptates fugiat a amet itaque. Aut quod odit neque libero nostrum debitis similique officia, omnis dolorum distinctio veniam ipsum facere repudiandae vitae hic iste quidem sit ipsa ducimus repellendus inventore ullam accusantium. Debitis alias accusamus dolore expedita, dolorem velit ex?
+        </p>
+        <input type="button" id="btn" value="submit">
+        <!-- <ul>
+            <li>Home</li>
+            <li>About me</li>
+            <li>next page</li>
+            <li>Settings</li>
+        </ul> -->
+    </div>
+    <script>
+        let paragraph=document.getElementById("para")
+        let button=document.getElementById("btn")
+        
+        
+        a=paragraph.addEventListener("mouseover",function test(){
+            console.log("mouse is over the paragraph")
+        })
+        if (a==true){
+            console.log("mouse is over the paragraph")
+        }
+        else{
+            paragraph.addEventListener("mouseover",function test()){
+            console.log("mouse is out the paragraph")}
+
+        }
+        // paragraph.addEventListener(not "mouseover",function test(){
+        //     console.log("mouse is out the paragraph")
+        // })
+
+        // // let main=document.getElementById("maindivID");
+        // // console.log(main);
+        // button.onclick = function hidepara()
+        // {
+        //     // paragraph.style.display="none";
+        //     if( paragraph.style.display!="none")
+        //     {
+        //         paragraph.style.display="none";
+        //     }
+        //     else
+        //     {
+        //         paragraph.style.display="block";
+        //     }
+
+        // }   
+        
+        
+
+    //     function countstudent() {
+    //       for(let i=1; i<=10; i++) {
+    //         alert("student" + i);
+    //       }
+    //     }
+    //   </script>
+      
+    <!-- //   <input type="button" onclick="countstudent()" value="Count student!"> -->
+    
+
+        <!-- </script> -->
+    <!-- <script>
+        let car=
+        {
+            company:"BMW",
+            mafyear:2020,
+            color:"White",
+            carInfo: function(){
+                console.log("The car is of company:"+this.compnay+"from yr+ear"+mafyear);
+            }
+        } -->
+    <!-- </script> -->
+</body>
+</html>

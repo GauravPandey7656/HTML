@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainDivID" class="mainDivClass">
+    
+        <h1 id="heading">Events and Handlers</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore possimus autem ea ad. Iusto ab quod mollitia! Omnis sequi, dolor voluptates, repellat eligendi praesentium necessitatibus ratione debitis non, nesciunt quos! Possimus error dignissimos voluptatum rerum! Pariatur beatae excepturi optio a accusantium? Sequi adipisci deserunt officiis corporis, quaerat sunt iste consectetur.</p>
+
+        <p id="time">The current date and time is : <span id="timeSpan">Current Date time</span></p>
+
+        <input id="btn" type="button" value="submit">
+
+    </div>
+    <script>
+        // let paragraph = document.getElementById("para");
+        // let button = document.getElementById("btn")
+
+        // paragraph.addEventListener('mouseover', function test(){
+        //     console.log("Mouse is over the paragraph");
+        // })
+
+
+
+        // let main = document.getElementById("mainDivID");
+        // console.log(main);
+
+        // button.onclick = function togglePara(){
+        //     if(paragraph.style.display != "none")
+        //     {
+        //         paragraph.style.display = "none";
+        //     }
+        //     else
+        //     {
+        //         paragraph.style.display = "block";
+
+        //     }
+        // }
+
+
+        // button.onclick = function countNumbers()
+        // {
+        //     for(let i = 0; i<11; i++){
+        //         console.log(i);
+        //     }
+        // }
+
+        // function greet()
+        // {
+        //     console.log("Hello World");
+        // }
+
+        // let timeOut = setTimeout(greet,5000) //Calling the function once after given time
+        // clearTimeout(timeOut)
+
+        // let interval = setInterval(greet,1000);
+        // clearInterval(interval)
+
+        function display(){
+            let timeDate = new Date();
+            console.log(timeDate);
+            document.getElementById("timeSpan").innerHTML = timeDate
+        }
+        setInterval(display,1000);
+    </script>
+</body>
+</html>
